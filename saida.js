@@ -40,10 +40,11 @@
         renderGarage();
         
         $("#search-button").addEventListener("click", () => {
-            const searchValue = $("#search-licence").value.trim().toUpperCase();
-            const garage = getGarage();
-            const filteredCars = garage.filter(car => car.licence.toUpperCase() === searchValue);
-            renderGarage(filteredCars);
+            performSearch();
+        });
+
+        $("#search-licence").addEventListener("input", () => {
+            performSearch();
         });
 
         $("#garage").addEventListener("click", (e) => {
@@ -53,6 +54,18 @@
             }
         });
     });
+
+    function performSearch() {
+        const searchValue = $("#search-licence").value.trim().toUpperCase();
+        const garage = getGarage();
+        
+        if (searchValue === "") {
+            renderGarage(garage); // Mostra todos os carros se o campo de busca estiver vazio
+        } else {
+            const filteredCars = garage.filter(car => car.licence.toUpperCase().includes(searchValue));
+            renderGarage(filteredCars);
+        }
+    }
 
     function checkOut(info) {
         const licence = info[1].textContent;

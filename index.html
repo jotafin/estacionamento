@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="style.css">  
+    <!-- Bootstrap Icons CSS (versão 1.x.x) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-container">
+       <!-- <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>--> 
+         <img  id="logomarca" src="app/sua-logo-aqui.png" alt="LOGO">
+        <nav class="menu">
+            <ul>
+                <li><a href="#home"><i class="bi bi-house"></i> Home</a></li>
+                <li><a href="#saida"><i class="bi bi-cash-coin"></i> Saída</a></li>
+                <li><a href="#relatorio"><i class="bi bi-bar-chart"></i> Relatório</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="left">
+            <input type="text" id="name" placeholder="Nome do veículo" autocomplete="off">
+            <input type="text" id="licence" placeholder="Placa do veículo" autocomplete="off">
+            <button id="send" class="success">Registrar</button>
+        </div>
+        <div class="right">
+            <div class="infos">
+                <div id="parking-info">
+                    <i class="bi bi-car-front-fill"></i>
+                    <p id="vagas">Vagas disponíveis: <mark><span id="available-spots"></span></mark></span></p>
+                    <p>Vagas ocupadas: <span id="occupied-spots">0</span></p>
+                </div>
+                <div class="parking-valor">
+                    <p>TOTAL DIÁRIO:</p>
+                    <p><i class="bi bi-currency-dollar"></i><span id="total-cost">0.00</span></p>
+                </div>
+            </div>
+            <div id="tabela">
+                <table>
+                    <thead>
+                        <div id="tabela-menu">
+                            <tr>
+                                <th>Veículo</th>
+                                <th>Placa</th>
+                                <th>Entrada</th>
+                                <th>Ações</th>
+                            </tr>
+                        </div>
+                    </thead>
+                    <tbody id="garage"></tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    <div class="cost-info"></div>
+    <script src="index.js"></script>
+</body>
+
+
+</html>

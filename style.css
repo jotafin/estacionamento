@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 98%;
+    margin: 2rem auto;
+    font-family: "Poppins", sans-serif; /* Usar uma fonte padrão */
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+input, button {
+    width: calc(100% - 20px); /* 100% menos o padding para ajuste */
+    padding: 0.6rem;
+    margin: 0.4rem 0;
+    border: 1px solid #ccc; /* Bordas finas */
+    border-radius: 3px;
+}
+
+button {
+    background-color: #03a538; /* Verde do botão 'Registrar' */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #028e32; /* Efeito de hover mais escuro */
+}
+table {
+    background-color: #fff; /* Fundo branco da tabela */
+    margin-top: 1rem;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+#tabela{
+    overflow-y: auto; /* Habilita rolagem vertical */
+    max-height: 600px;
+}
+
+th, td {
+    padding: 10px; /* Espaçamento interno maior */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Linhas de separação finas */
+}
+
+th {
+    background-color: #0152a1; /* Azul escuro para cabeçalho da tabela */
+    color: #fff;
+    padding: 15px; /* Espaçamento interno maior */
+}
+
+.success {
+    background-color: #03a538; /* Verde para botões de sucesso */
+}
+
+.delete {
+    background-color: #d61f1f; /* Vermelho para botões de exclusão */
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 250px;
+    padding: 20px;
+    
+}
+.left{
+    width: 35%;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+
+}
+.right{
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    
+}
+#parking-info{
+    padding: 50px;
+    width: 300px;
+    margin-right: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    background-color: #e0e1dd;
+    font-weight: bold;
+    
+}
+#vagas{
+    font-size: 18px;
+    font-weight: bold;
+}
+.parking-valor{
+    padding: 50px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    background-color: #e0e1dd;
+    font-weight: bold;
+}
+.infos{
+    display: flex;
+    justify-content: center;
+    
+}
+button {
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: green;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+  }
+  
+  button:active {
+    background-color: green;
+    /*50, 168, 80*/
+    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+  }
+  .cost-info{
+    background-color: #fff; /* Fundo branco da tabela */
+    margin-top: 1rem;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+  #total-cost{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    background-color: #03a538;
+  }
+  /* Container do menu */
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #1b263b; /* Cor do Twitter */
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+/* Botão de alternância do menu */
+.menu-toggle {
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+  
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #0d95e8; /* Cor mais escura para hover */
+}
+
+/* Estilos para o conteúdo principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+#logomarca{
+    width: 200px;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .menu-container {
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+    }
+
+    .menu-container.active {
+        transform: translateX(0);
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}

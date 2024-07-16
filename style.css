@@ -144,6 +144,8 @@ button {
     border-collapse: collapse;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-left: 250px;
+    padding: 20px;
   }
   #total-cost{
     font-size: 22px;
@@ -151,6 +153,7 @@ button {
     color: white;
     padding: 10px 20px;
     background-color: #03a538;
+    
   }
   /* Container do menu */
 .menu-container {
